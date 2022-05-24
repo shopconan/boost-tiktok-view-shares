@@ -39,7 +39,7 @@ jobs:
       - name: scrape proxy
         run: |
             ls
-            cd data 
+            cd Data 
             python ScrapeProxie.py
 
       - name: Run view bot
