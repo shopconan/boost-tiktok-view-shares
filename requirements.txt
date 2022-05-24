@@ -1,2 +1,7 @@
 ﻿requests
 pystyle
+
+beautifulsoup4==4.11.1
+fake_useragent==0.1.11
+selenium==4.1.3
+webdriver-manager
