@@ -14,12 +14,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 # License: https://github.com/billythegoat356/pycenter/blob/main/LICENSE
 
 
-def center(var: str, space: int = None):  # From Pycenter
-    if not space:
-        space = (os.get_terminal_size().columns -
-                 len(var.splitlines()[int(len(var.splitlines())/2)])) / 2
+# def center(var: str, space: int = None):  # From Pycenter
+#     if not space:
+#         space = (os.get_terminal_size().columns -
+#                  len(var.splitlines()[int(len(var.splitlines())/2)])) / 2
 
-    return "\n".join((' ' * int(space)) + var for var in var.splitlines())
+#     return "\n".join((' ' * int(space)) + var for var in var.splitlines())
 
 
 class Fore:
@@ -55,9 +55,9 @@ def banner():
             cyan += 15
             if cyan > 255:
                 cyan = 255
-    print(center(faded))
-    print(
-        center(f'{Fore.YELLOW}\ngithub.com/Plasmonix Version 2.0{Fore.RESET}'))
+    # print(center(faded))
+    # print(
+        # center(f'{Fore.YELLOW}\ngithub.com/Plasmonix Version 2.0{Fore.RESET}'))
 
 
 def load_proxies():
